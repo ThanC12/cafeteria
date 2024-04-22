@@ -1,0 +1,79 @@
+*{
+    /*margen */
+    margin: 0;
+    /*padding da bordes interiores*/
+    padding: 0;
+    /* un navegador que no coja los estitos que le estamos dando, estilos para opera*/
+    -webkit-box-sizing: border-box;
+    /*navegador para mozzila*/
+    -moz-box-sizing: border-box;
+    /*para todos los navegadores */
+    box-sizing: border-box;
+
+}
+body{
+    /*TIPO DE LETRAS CON EL QUE DESCARGAMOS dota la aplicacion*/
+    font-family: "open sans", Ariel, sans-serif;
+    font-size: 16px;
+
+}
+
+    .contenedor{
+    
+        border: 1px solid cornflowerblue;
+        /*cualquier dispositivo tenga el mismo tamano*/
+        width: 90%;
+        /*se queda en los mil px cual sea otro dispositivo*/
+        max-width: 1000px;
+        /* se centra automaticamente*/
+        margin: auto;
+        /**/
+        overflow: hidden;
+    }
+    /*--- estilos header---*/
+header{
+    border: 1px solid crimson;
+    width: 100%;
+    background:  url(../imagenes/.jpeg);    
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:  center 0;
+
+    
+}
+header .contenedor{
+    position: relative;
+    /* altura de la imagen*/
+    height: 700%;
+}
+
+header .menu{
+    width: 100%;
+    text-align: right ;
+    
+    
+}
+header .menu a{
+    color: aliceblue;
+    /*tamano de la fuente*/
+    font-size: 20px;
+    /*tamano d que nos dscargamos*/
+    font-weight: 300;
+    display: inline-block;
+    /*sentido de las manesilla del reloj*/
+    margin: 40px 20px;
+    /*sirve para eliminar el subrayado*/
+    text-decoration: none;
+    position: relative;
+
+}
+/* */
+header .menu a:hover{
+    text-decoration: underline;
+
+}
+
+
+
+    
+
