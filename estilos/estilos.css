@@ -1,4 +1,4 @@
-*{
+* {
     /*margen */
     margin: 0;
     /*padding da bordes interiores*/
@@ -11,49 +11,53 @@
     box-sizing: border-box;
 
 }
-body{
+
+body {
     /*TIPO DE LETRAS CON EL QUE DESCARGAMOS dota la aplicacion*/
     font-family: "open sans", Ariel, sans-serif;
     font-size: 16px;
 
 }
 
-    .contenedor{
-    
-        border: 1px solid cornflowerblue;
-        /*cualquier dispositivo tenga el mismo tamano*/
-        width: 90%;
-        /*se queda en los mil px cual sea otro dispositivo*/
-        max-width: 1000px;
-        /* se centra automaticamente*/
-        margin: auto;
-        /**/
-        overflow: hidden;
-    }
-    /*--- estilos header---*/
-header{
+.contenedor {
+
+    border: 1px solid cornflowerblue;
+    /*cualquier dispositivo tenga el mismo tamano*/
+    width: 90%;
+    /*se queda en los mil px cual sea otro dispositivo*/
+    max-width: 1000px;
+    /* se centra automaticamente*/
+    margin: auto;
+    /**/
+    overflow: hidden;
+}
+
+/*--- estilos header---*/
+header {
     border: 1px solid crimson;
     width: 100%;
-    background:  url(../imagenes/.jpeg);    
+    background: url(../imagenes/.jpeg);
     background-size: cover;
     background-attachment: fixed;
-    background-position:  center 0;
+    background-position: center 0;
 
-    
+
 }
-header .contenedor{
+
+header .contenedor {
     position: relative;
     /* altura de la imagen*/
-    height: 700%;
+    height: 700px;
 }
 
-header .menu{
+header .menu {
     width: 100%;
-    text-align: right ;
-    
-    
+    text-align: right;
+
+
 }
-header .menu a{
+
+header .menu a {
     color: aliceblue;
     /*tamano de la fuente*/
     font-size: 20px;
@@ -67,13 +71,86 @@ header .menu a{
     position: relative;
 
 }
-/* */
-header .menu a:hover{
+
+/*sdfsdfsdfsd */
+header .menu a:hover {
+    color: aqua;
     text-decoration: underline;
 
 }
 
+header .texto{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
 
+
+}
+header .texto .nombre{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+header .texto .nombre span{
+    font-weight: 300;
+}
+header .texto h3{
+    font-weight: 300;
+    font-size: 25px;
+  font-style: italic;
+}
+/*-----------MAIN------------*/
+.main{
+    background: url(../imagenes/WhatsApp\ Image\ 2024-04-17\ at\ 19.40.51\ \(2\).jpeg);
+    background-repeat: repeat;
+}
+/*trabajar con oderfloot */
+.main .acerca-de .contenedor{
+    overflow: visible;
+    /*se pospone una imagen una de otra*/
+    position: relative;
+
+
+}
+.main .acerca-de .foto{
+    width: 80%;
+    /*determina la posicion del elemento*/
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(228, 4, 4, 0.948);
+
+}
+ .main .acerca-de .foto img{
+        vertical-align: top;
+        width: 100%;
+    }
+
+.main .acerca-de article{
+    background: #fff;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top: 60px;
+    z-index: 1;
+    float: right;
+    box-shadow: 20px 10px 15px rgba(219, 55, 55, 0.35);
+
+}
+.main .acerca-de article h3{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
 
     
+}
+.main .acerca-de article p{
+    /*modifica el texto*/
+    line-height: 28px;
+    margin-bottom: 15px;
+
+}
 
